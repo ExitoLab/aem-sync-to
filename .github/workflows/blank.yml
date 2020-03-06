@@ -25,14 +25,11 @@ jobs:
       run: git version
     - name: Git-remote-add
       run: git remote add adobe https://github.com/weide-zhou/aem-sync-to.git
-    - name: Git-remote-v
-      run: |
-        git remote -v
     - name: Git-fetch-all
       run: git fetch --all    
     - name: Git-checkout-adobe
       run: git checkout -b sync-demo-master adobe/master
-    - name: set
+    - name: set user
       run: |
         git config --global user.email "weide-zhou@outlook.com"
         git config --global user.name "weide-zhou"
