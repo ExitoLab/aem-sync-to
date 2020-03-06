@@ -28,6 +28,9 @@ jobs:
       run: git version
     - name: Git-remote-add
       run: git remote add adobe https://github.com/kooyear/aem-sync-to.git
+    - name: Git-remote-v
+      run: |
+        git remote -v
     - name: Git-fetch-all
       run: git fetch --all    
     - name: Git-checkout-adobe
