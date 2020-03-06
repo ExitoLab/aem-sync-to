@@ -37,6 +37,6 @@ jobs:
         git config --global user.email "weide-zhou@outlook.com"
         git config --global user.name "weide-zhou"
     - name: Git-merge
-      run: git merge master --allow-unrelated-histories
+      run: git merge adobe/master --allow-unrelated-histories
     - name: Git-push
       run: git push --set-upstream adobe master
