@@ -28,7 +28,7 @@ jobs:
     - name: Git-remote-add
       run: git remote add adobe https://github.com/weide-zhou/aem-sync-to.git
     - name: Git-fetch-all
-      run: git fetch --unshallow --all  
+      run: git fetch --all  
     - name: Git-checkout-adobe
       run: git checkout -b sync-demo-master adobe/master
     - name: set user
