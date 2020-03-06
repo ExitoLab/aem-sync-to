@@ -38,7 +38,7 @@ jobs:
     - name: Git-merge
       run: |
         git merge master --allow-unrelated-histories
-        git fetch --unshallow adobe
+        git fetch --unshallow origin
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
