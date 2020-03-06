@@ -23,6 +23,7 @@ jobs:
     - uses: actions/checkout@v2
       with:
         persist-credentials: false
+        fetch-depth: 0
     - name: Git-version
       run: git version
     - name: Git-remote-add
