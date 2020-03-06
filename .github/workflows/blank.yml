@@ -27,7 +27,7 @@ jobs:
     - name: Git-version
       run: git version
     - name: Git-remote-add
-      run: git remote add adobe https://github.com/kooyear/aem-sync-to.git
+      run: git remote add adobe https://github.com/weide-zhou/aem-sync-to.git
     - name: Git-remote-v
       run: |
         git remote -v
@@ -36,6 +36,6 @@ jobs:
     - name: Git-checkout-adobe
       run: git checkout -b sync-demo-master adobe/master
     - name: Git-merge
-      run: git merge master
+      run: git merge master --allow-unrelated-histories
     - name: Git-push
       run: git push --set-upstream adobe master
