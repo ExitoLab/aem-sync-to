@@ -35,5 +35,7 @@ jobs:
         git config --global user.name "weide-zhou"
     - name: Git-merge
       run: git merge master --allow-unrelated-histories
-    - name: Git-push
-      run: git push --set-upstream adobe master
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        branch: sync-demo-master
