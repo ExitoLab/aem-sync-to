@@ -40,3 +40,4 @@ jobs:
       with:
         branch: sync-demo-master
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: weide-zhou/aem-sync-to
