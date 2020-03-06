@@ -42,7 +42,7 @@ jobs:
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
-        branch: sync-demo-master
+#        branch: sync-demo-master
         github_token: ${{ secrets.PAT }}
         repository: weide-zhou/aem-sync-to
         force: true
