@@ -39,6 +39,8 @@ jobs:
       run: |
         git merge master --allow-unrelated-histories
         git fetch --unshallow origin
+        git add .
+        git commit -m 'submit changes'
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
