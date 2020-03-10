@@ -39,7 +39,7 @@ jobs:
       run: |
         git merge -Xtheirs master --allow-unrelated-histories
         git fetch --unshallow origin
-        git clean -f
+        git remote remove adobe/master
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
