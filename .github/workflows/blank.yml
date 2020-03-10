@@ -47,3 +47,4 @@ jobs:
         github_token: ${{ secrets.PAT }}
         repository: weide-zhou/aem-sync-to
         force: true
+    - run: echo test
