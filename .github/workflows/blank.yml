@@ -47,4 +47,3 @@ jobs:
         github_token: ${{ secrets.PAT }}
         repository: weide-zhou/aem-sync-to
         force: true
-# comment1
